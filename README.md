@@ -1,11 +1,59 @@
-Hi! 👋
+<!--import React, { Component } from 'react',-->
 
-You've opened the IDE Sandbox. 🎉
+<!--class StudentForm extends Component {-->
+<!--  constructor(props) {-->
+<!--    super(props)-->
 
-The Sandbox is an environment that you can access on "readme" and "code-along" lessons in Learn. It's a great place to experiment with code when you're not working on a "lab" (labs open the IDE In Browser).
+<!--    const { Student } = this.props-->
 
-The work you do in the Sandbox will be saved from lesson to lesson, and is automatically saved on your behalf to a repository in your GitHub account called `learn-co-sandbox`.
+<!--    this.state = {-->
+<!--      id: student ? videoGame.id : null,-->
+<!--      name: student ? student.name : '',-->
+<!--    }-->
+<!--  }-->
+  
+<!--  class StudentList extends React.Component {-->
+<!--  constructor(props) {-->
+<!--    super(props)-->
 
-Please DO NOT touch this repository in GitHub, as it will affect your Sandbox experience, and potentially cause your work to be out of sync.
+<!--    this.state = { students: this.props.students } //making copy of props storing state-->
+<!--  }-->
+  
+<!--  renderStudents() {-->
+<!--    // console.log(this.props.students);-->
+<!--    // only show students with more than 6 characters in the name-->
+<!--    return this.state.studentsArray.filter(name => name.length > 6 -->
+<!--    ).map((student, i) => -->
+<!--    <StudentCard key={i} student={student} />-->
+<!--    )-->
+<!--  }-->
 
-To learn more about the Sandbox, please visit http://help.learn.co/ide-in-browser#sandbox.
+var students = [
+   'Doug',
+   'Albert',
+   'John',
+   'Pat',
+   'Cathy',
+   'Zac',
+   'Brad'
+  ]
+
+var students = [
+  name: 'Doug',
+  name: 'Albert',
+  name: 'John',
+  name: 'Pat',
+  name: 'Cathy',
+  name: 'Zac',
+  name: 'Brad'
+  ]
+  
+  mapFilter1 = students.name.filter(name => name.length > 3).map(name => name + '1')
+  
+  console.log(mapFilter1);
+  
+var array1 = [2, 3, 6, 8, 10]
+
+map1 = array1.filter(num => num < 6).map(num => num * num)
+
+console.log(map1)
